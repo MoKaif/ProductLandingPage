@@ -1,2 +1,2 @@
 # ProductLandingPage
-A freecodecamo project about a product landing page
+A freecodecamp project about a product landing page

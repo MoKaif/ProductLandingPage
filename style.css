@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: inline-block;
+  text-align: center;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  /* font-size: x-large; */
+}
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: rgb(255, 250, 250);
+  border-style: groove;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+.nav-item a{
+    text-decoration: none;
+    font-size: large;
+    color: #111;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.nav-logo {
+  font-size: 3.1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: #798a8a;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.text h1 {
+  display: flex;
+  align-items: left;
+  place-items: left;
+  text-align: start;
+  color: #fff;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.text h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+}
+
+.text p {
+  display: flex;
+  align-items: left;
+  place-items: left;
+  text-align: start;
+  font-size: 2.1em;
+  color: #fff;
+  margin: 1.25em 0;
+  font-weight: 400;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  background: #111;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.showcase.active {
+  right: 100%;
+}
